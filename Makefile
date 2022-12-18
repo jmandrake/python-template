@@ -6,7 +6,7 @@ test:
 	python -m pytest -vv --cov=main --cov=mylib test_*.py
 
 format:	
-	black *.py 
+	python -m black *.py 
 
 lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
